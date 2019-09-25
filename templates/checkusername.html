@@ -1,0 +1,11 @@
+<form action="check" method="POST">
+    {% csrf_token %}
+    <input type="text" name="username" placeholder="Username">
+    <input type="submit" value="Submit">
+</form>
+
+{% if messages %}
+{% for message in messages %}
+{{ message }}
+{% endfor %}
+{% endif %}

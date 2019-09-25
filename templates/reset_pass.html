@@ -1,0 +1,6 @@
+<form action="changePass" method="POST">
+    {% csrf_token %}
+    <input type="password" name="password1" placeholder="Password"> <br>
+    <input type="password" name="password2" placeholder="Confirm Password"> <br>
+    <input type="submit" value="Submit">
+</form>
